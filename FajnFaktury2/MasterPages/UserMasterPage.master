@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="UserMasterPage" %>
+
+<%@ Register Src="~/Controls/User/ucAppMenu.ascx" TagPrefix="uc1" TagName="ucAppMenu" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700" rel="stylesheet">
+    <link href="~/CSS/Master.css" rel="stylesheet" />
+    <link href="~/CSS/User.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table class="masterTable">
+                <tr>
+                    <td><h3>FajnFaktury2</h3></td>
+                    <td>search</td>
+                    <td>user account</td>
+                </tr>
+                <tr>
+                    <td>
+                        <uc1:ucAppMenu runat="server" ID="ucAppMenu" />
+                    </td>
+                    <td colspan="2" class="masterCell">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+
+
+
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿.masterTable {
+    width: 100%;
+    height: 100vh;
+    color: #d7d7d7;
+    border-collapse: collapse;
+}
+
+    .masterTable tr:first-child td {
+        background-color: #2e2e2e;
+        height: 60px;
+    }
+
+    .masterTable td:first-child {
+        background-color: #2e2e2e;
+        width: 200px;
+        vertical-align: top;
+    }
+
+    .masterTable td {
+        padding: 15px;
+    }
+
+
+.masterCell{
+   vertical-align:top;
+}
+
+.menuTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .menuTable td:first-child {
+        width: 30px;
+        padding: 0;
+    }
+
+    .menuTable td:nth-child(2) {
+        text-align: left;
+        padding: 0;
+    }
+
+    .menuTable a{
+        color: #d7d7d7;
+        text-decoration: none;
+    }
+
+    .menuTable a:visited {
+        color: #d7d7d7;
+        text-decoration:none;
+    }
