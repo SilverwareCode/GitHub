@@ -12,17 +12,11 @@ using System.Web.UI.WebControls;
 
 public partial class controls_ucLogin : System.Web.UI.UserControl
 {
-    string targetPage;
-    string registrationPage = WebConfigurationManager.AppSettings["NewRegistrationPage"];//nová registrace
-    string recoveryPage = WebConfigurationManager.AppSettings["urlPasswordRecoveryRequest"];//pass.recovery req.
 
     protected void Page_Load(object sender, EventArgs e)
     {
         //natahuji URL do odkazů na obnovení hesla a registraci
-        recoveryLink.NavigateUrl = recoveryPage;
-        createLink.NavigateUrl = registrationPage;
-        //ReturnUrl
-        targetPage = Request.QueryString["ReturnUrl"];
+        string targetPage = Request.QueryString["ReturnUrl"];
     }
 
 

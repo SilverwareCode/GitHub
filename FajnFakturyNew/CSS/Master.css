@@ -1,0 +1,12 @@
+﻿body {
+    font-family: Roboto,'Open Sans',"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin:0;
+}
+
+input{
+    height:40px;
+    background-color:#ffb400;
+    border:0;
+    color:#2e2e2e;
+    font-size:14px;
+}

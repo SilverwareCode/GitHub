@@ -1,19 +1,13 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucLogin.ascx.cs" Inherits="controls_ucLogin" %>
 
 <div id="loginForm" runat="server" class="loginContainer">
-    <style>
-        .clearText
-        {
-            text-decoration:none !important;
-        }
-
-    </style>
 
 
-    <table border="0" class="tab">
+
+    <table border="0">
         <tr>
             <td colspan="2" class="captionHeader">
-                <asp:Label ID="lblUserName" runat="server" CssClass="clearText" Text="user name or email address" ></asp:Label>
+                <asp:Label ID="lblUserName" runat="server" CssClass="clearText" Text="user name or email address"></asp:Label>
                 <!--<asp:RequiredFieldValidator ID="Validator1" runat="server" ErrorMessage="my text" CssClass="error" ControlToValidate="txtUserName">required!</asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="Validator3" runat="server" ErrorMessage="RegularExpressionValidator" ControlToValidate="txtUserName" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" CssClass="error">email format required</asp:RegularExpressionValidator>-->
 
@@ -28,10 +22,10 @@
 
         <tr>
             <td colspan="2" class="captionHeader">
-                
+
                 <asp:Label ID="lblPassword" runat="server" Text="password" CssClass="clearText"></asp:Label>
                 <asp:RequiredFieldValidator ID="Validator2" runat="server" ErrorMessage="my text" CssClass="error" ControlToValidate="txtPassword">required!</asp:RequiredFieldValidator>
-                
+
             </td>
         </tr>
 
@@ -54,14 +48,16 @@
 
         <tr>
             <td>
-                <div class="hyperLeft">
-                    <asp:HyperLink ID="createLink" runat="server" CssClass="hypText" NavigateUrl="~/Public/NewAccount.aspx">New account</asp:HyperLink>
+                <div>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Public/NewAccount.aspx">New account</asp:HyperLink>
                 </div>
 
             </td>
-            <td style="height: 50px;">
-                <div class="hyperRight">
-                    <asp:HyperLink ID="recoveryLink" runat="server" CssClass="hypText" >Forgot password?</asp:HyperLink>
+            <td>
+                <div>
+
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Public/ForgotPassword.aspx">Forgot password?</asp:HyperLink>
+
                 </div>
             </td>
         </tr>
